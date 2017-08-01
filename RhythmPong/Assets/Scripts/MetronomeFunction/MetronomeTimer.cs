@@ -18,7 +18,6 @@ public class MetronomeTimer : MonoBehaviour
 
     [SerializeField]
     int m_beats;    
-    [SerializeField]
     bool m_isOn;
 
     int m_currentBeat;
