@@ -16,6 +16,10 @@ public class Metronome : MonoBehaviour
     {
         m_isOnPointSound = value;
     }    
+    public bool GetIsOnPointSound()
+    {
+        return m_isOnPointSound;
+    }
 
     void BeatEvent(int beat)
     {
@@ -51,5 +55,10 @@ public class Metronome : MonoBehaviour
     public void SetBPM(float bpm)
     {
         m_timer.SetBPM((int)bpm);
+    }
+
+    public float GetBPM()
+    {
+        return m_timer.GetBPM();
     }
 }

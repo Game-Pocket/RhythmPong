@@ -16,6 +16,11 @@ public class MetronomeTimer : MonoBehaviour
         m_intervalSeconds = GetInterval(m_bpm);
     }
 
+    public int GetBPM()
+    {
+        return m_bpm;
+    }
+
     [SerializeField]
     int m_beats;    
     bool m_isOn;

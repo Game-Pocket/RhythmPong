@@ -167,6 +167,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224405223127103400}
+  - component: {fileID: 114487595574082240}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -613,9 +614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a2a5cbfc8867e4c91532b394a041ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_bpm: 60
+  m_bpm: 120
   m_beats: 4
-  m_isOn: 0
 --- !u!114 &114293824007354148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -759,6 +759,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114487595574082240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296296772129386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e73341e126d35c4e8cd074bc0dca26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114502259385558930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1015,7 +1026,7 @@ MonoBehaviour:
   m_sound: {fileID: 114031402311035284}
   m_timer: {fileID: 114258797539226198}
   m_audio: {fileID: 82776419914931290}
-  m_isOnPointSound: 1
+  m_isOnPointSound: 0
 --- !u!114 &114930918781053982
 MonoBehaviour:
   m_ObjectHideFlags: 1
