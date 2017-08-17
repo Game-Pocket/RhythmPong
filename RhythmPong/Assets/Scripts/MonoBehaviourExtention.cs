@@ -9,7 +9,7 @@ namespace UnityEngine
     {
         public static T GetComponentInChildren<T>(this Component mono, string childName) where T : Component
         {
-            if (childName == null) return default(T);
+            if (string.IsNullOrEmpty(childName) == true) return default(T);
 
             Transform child = mono.transform.Find(childName);
 
